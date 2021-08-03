@@ -1,0 +1,236 @@
+nav{
+    background-color: #f08080;
+    color: #fed9b7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    padding: 20px 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-right: 40px;
+}
+nav li:hover{
+    transform: translateY(-10px);
+  text-shadow: 2px 2px 4px #000000;
+
+}
+nav h1{
+    font-size: 40px;
+    margin-left: 80px;
+    font-family: 'Lobster', cursive;
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'WindSong', cursive;
+    text-shadow: 0px 2px 0px #bbb,
+                           1px 3px 0px #aaa,
+                           2px 4px 0px #999,
+                 6px 14px 10px rgba(0,0,0,0.45),
+                 6px 14px 2px rgba(0,0,0,0.4),
+                 9px 21px 30px rgba(0,0,0,0.4);
+                 font-weight: bold;
+}
+/*slideshow wali css */
+
+.slide{
+    overflow: hidden;
+    width: 70vw;
+    height: 550px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px #f08080;
+}
+.anim{
+    height: 550px;
+    width: 20%;
+    float: left;
+}
+.anim img{
+    height: 550px;
+    width: 100%;
+}
+.photos{
+    width: 400%;
+    animation:10s slideshow ease infinite;
+   }
+
+@keyframes slideshow{
+    20%{
+        margin-left: 0px;
+    }
+    40%{
+        margin-left: calc(-900px*1);
+    }
+    60%{
+        margin-left: calc(-900px*2);
+    }
+    80%{
+        margin-left: calc(-900px*3);
+    }
+}
+/* Cards part */
+#head{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+font-family: 'Staatliches', cursive;
+color: #b392ac;
+font-size: 50px;
+text-shadow: 2px 2px 4px #000000;
+}
+div.middle h1{
+    color: #d90429;
+}
+section{
+    font-family: 'Staatliches', cursive;
+    width: 90vw;  
+    margin:30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    width: 300px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 3px 3px rgb(104,104,104);
+    transition: 100ms;
+    border-radius: 30px;
+}
+
+figure:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+figure img{
+    height: 250px;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+figcaption{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+figcaption button{
+    padding: 10px 20px;
+    margin:15px;
+    font-size: 20px;
+    border:3px solid #6d6875;
+    border-radius: 5px;
+    background:none;
+}
+
+figcaption button:hover{
+    background: #83c5be;
+    color:white;
+    cursor: pointer;
+}
+/* Bottom part */
+#bottom{
+ display: flex;
+justify-content: center;
+margin-top: 50px;
+font-family: 'Staatliches', cursive;
+color: #b392ac;
+font-size: 50px;
+text-shadow: 2px 2px 4px #000000;
+}
+
+.twodiv{
+    width: 95vw;
+    /* height: 400px; */
+    box-shadow:0px 3px 3px rgb(104,104,104);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px 10px;
+}
+div#lastsec{
+    width: 40%;
+    background-color: #f08080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+
+}
+div#lastsec h1{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    margin:45px;
+}
+div#lastsec h2{
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 20px;
+}
+div#lastsec ion-icon{
+    color: white;
+    font-size: 90px;
+}
+
+#last form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 5px;
+}
+#last input,label,textarea{
+    margin: 5px 4px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+#last label{
+    color: #ff5d8f;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+form button{
+    height: 45px;
+    margin: 5px 4px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    min-width: 95%;
+    border: 2px solid black;
+    /* max-width: 95%; */
+}
+form button:hover{
+    background: #83c5be;
+    color:white;
+    cursor: pointer;
+    box-shadow:0px 3px 3px rgb(104,104,104);
+}
+
+/* media queries */
+
+@media screen and (max-width:768px){
+    div#lastsec{
+        width: 90%;
+    }
+    #last form{
+        width: 95%;
+    }
+}
+
